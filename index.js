@@ -26,14 +26,14 @@ const ingestionProps = new IngestionProps({
 const ingestClient = new IngestClient(kcsb, ingestionProps);
 
 async function IngestStream(stream) {
-	try 
+    try 
     {
-		await ingestClient.ingestFromStream(stream, null);
-	} 
+        await ingestClient.ingestFromStream(stream, null);
+    } 
     catch (err) 
     {
         console.log(err);
-	}
+    }
 }
 
 exports.handler = async function(input, context) {
