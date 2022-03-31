@@ -28,3 +28,8 @@ We can leverage AWS CloudWatch [subscription filters](https://docs.aws.amazon.co
 After we've set the subscription filter to stream log events from the log group `kusto_log_group`, the lambda will accept the events as base64 encoded and compressed with the gzip format object. 
 
 If you have already set up your Azure Data Explorer database to accept data from this function, you should be able to see your logs in ADX after they get ingested.
+
+
+## Sample Code Disclaimer
+
+This Sample Code is provided for the purpose of illustration only and is not intended to be used in a production environment. THIS SAMPLE CODE AND ANY RELATED INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
